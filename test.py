@@ -2,8 +2,8 @@ import streamlit as st
 from supabase import create_client, Client
 
 # Połączenie z Supabase
-url = st.secrets["SUPABASE_URL"] if "SUPABASE_URL" in st.secrets else "TU_WKLEJ_URL"
-key = st.secrets["SUPABASE_KEY"] if "SUPABASE_KEY" in st.secrets else "TU_WKLEJ_KEY"
+url = st.secrets["SUPABASE_URL"] if "SUPABASE_URL" in st.secrets else "https://orqmqtuftyjwzgewjwdo.supabase.co"
+key = st.secrets["SUPABASE_KEY"] if "SUPABASE_KEY" in st.secrets else "sb_publishable_wsgQI7Vay1ccTgmLbQsjwQ_yFAXNko4"
 
 supabase: Client = create_client(url, key)
 
